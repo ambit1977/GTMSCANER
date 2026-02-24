@@ -31,6 +31,24 @@
 3. gtm.js 内の `resource` オブジェクト（tags / predicates / macros）を解析
 4. タグ・トリガー・変数の一覧をポップアップに表示
 
+## バージョン
+
+- 修正のたびに `manifest.json` の `version` を 1.0.1 → 1.0.2 … のように上げる運用にしています。
+
+## Git プッシュ（HTTPS でブラウザ認証）
+
+GitHub は HTTPS のパスワード認証を廃止しているため、**ブラウザでログインして認証**するには次のいずれかを使います。
+
+1. **Git Credential Manager (GCM)**  
+   - [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager) を入れていると、`git push` 時にブラウザが開き、GitHub にログインして認証できます。  
+   - 初回だけブラウザでサインインし、以降はその認証が使われます。
+
+2. **GitHub CLI**  
+   - `brew install gh` のあと、`gh auth login` を実行し、表示に従って「ブラウザで認証」を選ぶと、HTTPS の `git push` でもその認証が使われます。
+
+3. **Personal Access Token (PAT)**  
+   - [GitHub → Settings → Developer settings → Personal access tokens](https://github.com/settings/tokens) でトークンを作成し、`git push` 時のパスワード欄にそのトークンを入力する方法です（ブラウザは開きませんが、HTTPS でプッシュ可能です）。
+
 ## 注意
 
 - GTM が埋め込まれていないページでは「このページでは GTM コンテナが検出されませんでした」と表示されます。
