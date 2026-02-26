@@ -27,7 +27,7 @@
 ## 動作の流れ
 
 1. 現在のタブのページ内の `<script src="...gtm.js?id=GTM-XXXXX">` および `<noscript>` 内の iframe からコンテナIDを検出
-2. 各コンテナIDに対して `https://www.googletagmanager.com/gtm.js?id=GTM-XXXXX` を取得
+2. 各コンテナIDに対して `https://www.googletagmanager.com/gtm.js?id=GTM-XXXXX` を取得（**キャッシュを使わず**毎回最新の公開版を取得）
 3. gtm.js 内の `resource` オブジェクト（tags / predicates / macros）を解析
 4. タグ・トリガー・変数の一覧をポップアップに表示
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GTM Scanner",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "現在のウェブサイトに読み込まれているGTMコンテナを解析し、タグ・トリガー・変数の概要をレポートします",
   "permissions": ["activeTab", "scripting"],
   "host_permissions": [

@@ -66,6 +66,19 @@
       background: #f9fafb;
       border-bottom: 1px solid #f3f4f6;
     }
+    .summary-bar .count-sub {
+      font-size: 11px;
+      color: #9ca3af;
+    }
+    .count-note {
+      margin: 0;
+      padding: 6px 12px 10px;
+      font-size: 11px;
+      color: #6b7280;
+      line-height: 1.4;
+      background: #fff;
+      border-bottom: 1px solid #f3f4f6;
+    }
     .section {
       padding: 10px 12px;
       border-bottom: 1px solid #f3f4f6;
@@ -91,6 +104,38 @@
     .named-vars code { background: #f3f4f6; padding: 1px 4px; border-radius: 3px; }
     .named-vars .var-type { color: #6b7280; margin-left: 4px; }
     .named-vars .more { font-style: italic; color: #9ca3af; }
+    .var-builtin { font-size: 10px; color: #059669; background: #d1fae5; padding: 1px 5px; border-radius: 3px; margin-left: 4px; }
+    .zone-note { margin: 0 0 8px 0; font-size: 11px; color: #6b7280; }
+    .zone-list { list-style: none; padding-left: 0; }
+    .zone-item { padding: 8px 0; border-bottom: 1px solid #f3f4f6; }
+    .zone-item:last-child { border-bottom: none; }
+    .zone-name { font-weight: 600; color: #1e40af; display: block; margin-bottom: 4px; }
+    .zone-details { margin: 0; padding-left: 18px; font-size: 12px; color: #4b5563; }
+    .trigger-type-list { list-style: none; padding-left: 0; }
+    .trigger-type-item { margin-bottom: 6px; }
+    .trigger-type-btn {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      padding: 8px 10px;
+      border: 1px solid #e5e7eb;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .trigger-type-btn:hover { background: #f3f4f6; }
+    .trigger-type-label { font-weight: 600; color: #111; }
+    .trigger-type-count { color: #6b7280; font-variant-numeric: tabular-nums; }
+    .trigger-type-drilldown { padding: 10px; margin-top: 4px; border-left: 3px solid #1967d2; background: #f8fafc; border-radius: 0 6px 6px 0; font-size: 12px; max-height: 280px; overflow-y: auto; }
+    .trigger-detail-block { padding: 8px 0; border-bottom: 1px solid #e5e7eb; }
+    .trigger-detail-block:last-child { border-bottom: none; }
+    .trigger-detail-title { font-weight: 600; color: #374151; display: block; margin-bottom: 4px; }
+    .trigger-conditions { margin: 0 0 6px 0; padding-left: 18px; }
+    .trigger-firing-tags { margin: 0; color: #1e40af; font-weight: 500; }
+    .trigger-firing-tags.empty { color: #6b7280; font-weight: 400; }
     .speed-section { background: #f9fafb; }
     .speed-summary {
       display: flex;
@@ -111,6 +156,12 @@
     .impact-very-heavy .speed-label { color: #b91c1c; }
     .speed-details { margin: 0; padding-left: 18px; font-size: 12px; color: #6b7280; }
     .empty { color: #9ca3af; font-style: italic; }
+    .other-scripts { background: #f8fafc; }
+    .other-scripts-note { font-size: 12px; color: #6b7280; margin-bottom: 8px; }
+    .other-scripts-list { list-style: none; padding-left: 0; }
+    .other-scripts-list li { padding: 4px 0; font-size: 12px; }
+    .other-scripts-kind { font-weight: 500; color: #374151; }
+    .other-scripts-list code { background: #e5e7eb; padding: 2px 6px; border-radius: 3px; margin-left: 4px; }
     .error {
       padding: 12px;
       background: #fef2f2;
